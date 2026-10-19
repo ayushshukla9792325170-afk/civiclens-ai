@@ -12,15 +12,15 @@ export default defineConfig({
     port: 5173,
     proxy: {
       '/api': {
-        target: 'http://localhost:8000',
+        target: 'https://civiclens-ai-x6or.onrender.com',
         changeOrigin: true,
       },
       '/uploads': {
-        target: 'http://localhost:8000',
+        target: 'https://civiclens-ai-x6or.onrender.com',
         changeOrigin: true,
       },
       '/ws': {
-        target: 'ws://localhost:8000',
+        target: 'https://civiclens-ai-x6or.onrender.com',
         ws: true,
       }
     }
